@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+
+    <form method="post">
+        <select name="selectCoin" onchange='this.form.submit()'>
+            <option>Select Coin</option>
+            <option value="avalanche-2">Avalanche-2 (AVAX)</option>
+            <option value="binancecoin">binancecoin (BNB)</option>
+            <option value="bitcoin">Bitcoin (BTC)</option>
+            <option value="cardano">Cardano (ADA)</option>
+            <option value="decentraland">Decentraland (MANA)</option>
+            <option value="dogecoin">Dogecoin (DOGE)</option>
+            <option value="ethereum">Ethereum (ETH)</option>
+            <option value="ripple">Ripple (XRP)</option>
+            <option value="solana">Solana (SOL)</option>
+            <option value="tether">Tether (USDT)</option>
+        </select>
+    </form>
+    
+    <div>
+       
+        name : <%- myData.id %> <br>
+        sentiment_votes_up_percentage : <%- myData.sentiment_votes_up_percentage %> <br>
+        high_24h : <%- myData.market_data.high_24h["usd"] %><br>
+        low_24hr : <%- myData.market_data.low_24h["usd"] %> <br>
+        Market Cap 24Hrs : <%- myData.market_data.price_change_percentage_24h %> % <br>
+    </div>
+
+    <div id="chart">
+
+    </div>
+
+
+    <script>
+        let mCapData = '<%- JSON.stringify(mychart.market_caps) %>'
+        mCapData = String(mCapData)
+        mCapData = JSON.parse(mCapData)
+        
+
+        let mVolData = '<%- JSON.stringify(mychart.market_caps) %>'
+        mVolData = String(mVolData)
+        mVolData = JSON.parse(mVolData)
+    
+    
+        var options = {
+            chart: {
+                height: 300,
+                width: 800,
+              type: 'line'
+            },
+
+            stroke: {
+                curve: 'smooth',
+            },
+
+            series: [{
+              name: 'Market Cap',
+              data: mCapData,
+              type: 'area'
+            }, {
+                name: 'Volume Cap',
+                data: mVolData,
+                type: 'area'
+            }],
+
+            xaxis: {
+              type: "datetime"
+            }, 
+
+            yaxis: [
+          {
+            title: {
+              text: 'Series A',
+            },
+          },
+          {
+            opposite: true,
+            title: {
+              text: 'Series B',
+            },
+          },
+        ],
+
+        dataLabels: {
+            enabled: false
+        },
+        
+    }
+          
+          var chart = new ApexCharts(document.querySelector("#chart"), options);
+          
+          chart.render();
+    </script>
+</body>
+</html>
