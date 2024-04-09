@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+app.use(express.static('public'));
+
 const port = 3000;
 var request = require('request')
 var multer = require('multer')
@@ -31,7 +33,7 @@ async function resData(coinName){
 
   if(marketData){
     var marketChart = await new Promise((resolve, reject) => {
-      request('https://api.coingecko.com/api/v3/coins/' + coinName + '/market_chart?vs_currency=inr&days=30', function (error, response, body) {
+      request('https://api.coingecko.com/api/v3/coins/' + coinName + '/market_chart?vs_currency=inr&days=180', function (error, response, body) {
         console.error('error:', error); 
         console.log('statusCode:', response && response.statusCode);
         mychart = JSON.parse(body);//chart ka data 

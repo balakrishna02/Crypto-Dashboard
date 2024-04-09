@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+.name {
+    font-family: 'NHaasGroteskDSPro-65Md';
+    margin-top: 3px;
+}
+
+.charts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+#card-body{
+    margin: 1.2rem 1.2rem 0rem 1.2rem;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* .container-nav {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+} */
+
+
+
+
+/* 
+var options = {
+    chart: {
+        height: 400,
+        width: 600,
+        type: 'area'
+    },
+    grid: {
+        show: false
+    },
+    title: {
+        text: "Market Price (USD)",
+        style: {
+            fontSize: '14px',
+            fontWeight: 'bold',
+            color: '#00ffea'
+        }
+    },
+    stroke: {
+        curve: 'smooth'
+    },
+    series: [{
+        name: 'Market Price',
+        data: mCapData
+
+    }
+    ],
+
+    xaxis: {
+        type: "datetime"
+    },
+    dataLabels: {
+        enabled: false
+    },
+    yaxis: {
+        show: false
+    },
+    colors: ["#00ffea", "#00ffea"],
+    tooltip: {
+        y: {
+            formatter: (value) => { return value.toFixed(2) }
+        },
+        theme: "dark"
+    }
+}
+
+var chart = new ApexCharts(document.querySelector("#chart1"), options);
+
+chart.render(); */
+
+/* 
+
+22222222222222222222222
+
+var options = {
+    chart: {
+        height: 300,
+        width: 800,
+        type: 'area'
+    },
+    grid: {
+      show: false
+    },
+
+    title: {
+      text: "Market Cap (USD)",
+      style: {
+          fontSize: '14px',
+          fontWeight: 'bold',
+          color: '#00ffea'
+        }
+    },
+    
+    stroke: {
+        curve: 'smooth',
+    },
+
+    series: [{
+      name: 'Market Cap',
+      data: mCapData,
+      
+    }],
+
+    xaxis: {
+      type: "datetime"
+    }, 
+
+    dataLabels: {
+      enabled: false
+    },
+
+    yaxis: [{
+        show: false,
+    }],
+
+  colors: ["#00ffea", "red"],
+
+  tooltip: {
+    y: {
+        formatter: (value) => { return value.toFixed(2) }
+    },
+    theme: "dark"
+  }
+}
+  
+var chart = new ApexCharts(document.querySelector("#chart1"), options);
+  
+chart.render(); */
