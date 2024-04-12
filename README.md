@@ -11,7 +11,9 @@ The dashboard is an excellent tool for analyzing market data as it displays data
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/a23a7102-bc21-44da-bd3d-0a5ac203d426)
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/ac790ea1-d9b2-4749-a04a-d7dc8f688fe8)
 
+
 selecting Ethereum 
+
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/1b968bfc-2206-43da-ad06-f6d2f8d11835)
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/970dfdbc-42b2-4556-a62b-9084ada35772)
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/c21591ee-77ff-4708-ac18-d7f930c650d9)
