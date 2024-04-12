@@ -7,8 +7,11 @@ The dashboard is an excellent tool for analyzing market data as it displays data
 
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/4f220393-454c-4343-9894-fadfba19c53a)
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/fdd8b1bc-1527-4ef1-8edd-c3a7ee997f41)
+pointing on the market price on 20th Feb
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/9b4ad65f-c12a-4cb4-a4dc-83963ee60c67)
+pointing on market capitalization as market cap on 20th Feb
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/a23a7102-bc21-44da-bd3d-0a5ac203d426)
+pointing on market volume on 20th Feb
 ![image](https://github.com/balakrishna02/Crypto-Dashboard/assets/138507886/ac790ea1-d9b2-4749-a04a-d7dc8f688fe8)
 
 
